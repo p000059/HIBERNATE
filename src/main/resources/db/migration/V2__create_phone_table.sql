@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS phone (
+    id BIGINT PRIMARY KEY,
+    type VARCHAR(15) NOT NULL,
+    number VARCHAR(11) NOT NULL,
+    status BOOLEAN NOT NULL
+);
+

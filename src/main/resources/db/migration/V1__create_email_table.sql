@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS email (
+    id BIGINT PRIMARY KEY,
+    email VARCHAR(180) NOT NULL,
+    status BOOLEAN NOT NULL
+);

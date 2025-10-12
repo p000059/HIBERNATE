@@ -15,23 +15,37 @@
 	<name>HIBERNATE</name>
 	<description>Project Sysreg</description>
 	<url />
-	<licenses>
-		<license />
-	</licenses>
-	<developers>
-		<developer />
-	</developers>
+
 	<scm>
-		<connection />
-		<developerConnection />
-		<tag />
-		<url />
+		<connection>scm:git:https://github.com/p000059/HIBERNATE.git</connection>
+		<developerConnection>scm:git:https://github.com/p000059/HIBERNATE.git</developerConnection>
+		<tag>main</tag>
+		<url>https://github.com/p000059/HIBERNATE</url>
 	</scm>
+
 	<properties>
+		<p000059>p000059</p000059>
 		<java.version>17</java.version>
 		<spring-ai.version>1.0.3</spring-ai.version>
 	</properties>
+
 	<dependencies>
+
+		<!--
+		https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-parent</artifactId>
+			<version>4.0.0-M3</version>
+			<type>pom</type>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
 
 		<!--
 		https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
@@ -94,7 +108,7 @@
 		https://mvnrepository.com/artifact/org.flywaydb/flyway-database-postgresql -->
 		<dependency>
 			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-database-postgresql</artifactId>			
+			<artifactId>flyway-database-postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 
